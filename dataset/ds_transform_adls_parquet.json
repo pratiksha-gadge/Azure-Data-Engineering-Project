@@ -1,5 +1,5 @@
 {
-"name": "ds_transform_adls_parquet",
+"name": "DS_Transformed_ADLS_Parquet",
 "properties": {
 "linkedServiceName": {
 "referenceName": "LS_ADLSGen2",
@@ -7,7 +7,7 @@
 },
 "type": "AzureBlobFSFolder",
 "typeProperties": {
-"relativePath": "transform/Products"
+"relativePath": "transform/products"
 },
 "format": {
 "type": "ParquetFormat"
