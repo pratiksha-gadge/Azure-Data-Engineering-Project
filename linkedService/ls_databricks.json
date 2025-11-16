@@ -3,8 +3,8 @@
 "properties": {
 "type": "Databricks",
 "typeProperties": {
-"domain": "https://{{DATABRICKS_WORKSPACE_URL}}",
-"existingClusterId": "{{CLUSTER_ID_OR_LEAVE_EMPTY}}",
+"domain": "https://adb-996527983683640.0.azuredatabricks.net",
+"existingClusterId": "",
 "accessToken": "{{DATABRICKS_TOKEN}}"
 },
 "annotations": []
