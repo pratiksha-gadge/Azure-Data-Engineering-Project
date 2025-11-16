@@ -1,0 +1,12 @@
+{
+"name": "LS_Databricks_workspace",
+"properties": {
+"type": "Databricks",
+"typeProperties": {
+"domain": "https://{{DATABRICKS_WORKSPACE_URL}}",
+"existingClusterId": "{{CLUSTER_ID_OR_LEAVE_EMPTY}}",
+"accessToken": "{{DATABRICKS_TOKEN}}"
+},
+"annotations": []
+}
+}
