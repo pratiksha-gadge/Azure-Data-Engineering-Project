@@ -1,4 +1,4 @@
-{
+{{
 "name": "DS_Raw_GitHub_CSV",
 "properties": {
 "linkedServiceName": {
@@ -7,14 +7,15 @@
 },
 "type": "HttpFile",
 "typeProperties": {
-"relativeUrl": "nive2530/Azure-Data-Engineering-Project/Data/AdventureWorks_Products.csv",
+"relativeUrl": "nive2530/Azure-Data-Engineering-Project/main/Data/AdventureWorks_Products.csv",
 "enableServerCertificateValidation": true
 },
 "structure": [],
 "format": {
 "type": "TextFormat",
 "columnDelimiter": ",",
-"rowDelimiter": "\n",
+"rowDelimiter": "
+",
 "encodingName": "utf-8"
 }
 }
