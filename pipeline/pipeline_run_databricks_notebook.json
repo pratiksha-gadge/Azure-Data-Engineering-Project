@@ -1,0 +1,31 @@
+{
+"name": "Pipeline_Run_Databricks_Transform",
+"properties": {
+"activities": [
+{
+"name": "Run_Databricks_Notebook",
+"type": "DatabricksNotebook",
+"dependsOn": [
+{
+"activity": "CopyFromGitHubToADLS",
+"dependencyConditions": [
+"Succeeded"
+]
+}
+],
+"typeProperties": {
+"notebookPath": "/Repos/{{DATABRICKS_USER}}/Azure-Data-Engineering-Project/data_transformations_databricks.ipynb",
+"baseParameters": {
+"input_path": "abfss://raw@{{STORAGE_ACCOUNT_NAME}}.dfs.core.windows.net/raw/AdventureWorks_Products.csv",
+"output_path": "abfss://transform@{{STORAGE_ACCOUNT_NAME}}.dfs.core.windows.net/transform/Products/"
+}
+},
+"linkedServiceName": {
+"referenceName": "LS_Databricks_workspace",
+"type": "LinkedServiceReference"
+}
+}
+],
+"annotations": []
+}
+}
