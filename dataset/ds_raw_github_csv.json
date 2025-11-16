@@ -1,0 +1,21 @@
+{
+"name": "DS_Raw_GitHub_CSV",
+"properties": {
+"linkedServiceName": {
+"referenceName": "LS_GitHubRaw_HTTP",
+"type": "LinkedServiceReference"
+},
+"type": "HttpFile",
+"typeProperties": {
+"relativeUrl": "nive2530/Azure-Data-Engineering-Project/main/data/raw/{{CSV_FILENAME}}",
+"enableServerCertificateValidation": true
+},
+"structure": [],
+"format": {
+"type": "TextFormat",
+"columnDelimiter": ",",
+"rowDelimiter": "\n",
+"encodingName": "utf-8"
+}
+}
+}
