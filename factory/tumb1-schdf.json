@@ -1,0 +1,9 @@
+{
+	"name": "tumb1-schdf",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "df732daa-2023-4d2e-8894-176720c17381",
+		"tenantId": "34652452-bd21-41d9-bce7-c43e30c2219f"
+	}
+}
