@@ -7,7 +7,7 @@
 },
 "type": "HttpFile",
 "typeProperties": {
-"relativeUrl": "nive2530/Azure-Data-Engineering-Project/Data/AdventureWorks_Calendar.csv",
+"relativeUrl": "nive2530/Azure-Data-Engineering-Project/Data/AdventureWorks_Products.csv",
 "enableServerCertificateValidation": true
 },
 "structure": [],
