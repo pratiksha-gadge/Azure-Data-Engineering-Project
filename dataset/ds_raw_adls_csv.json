@@ -13,7 +13,8 @@
 "format": {
 "type": "TextFormat",
 "columnDelimiter": ",",
-"rowDelimiter": "\n",
+"rowDelimiter": "
+",
 "encodingName": "utf-8"
 }
 }
