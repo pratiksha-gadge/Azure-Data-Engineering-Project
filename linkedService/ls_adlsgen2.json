@@ -1,0 +1,14 @@
+{
+"name": "LS_ADLSGen2",
+"properties": {
+"type": "AzureBlobFS",
+"typeProperties": {
+"url": "https://{{STORAGE_ACCOUNT_NAME}}.dfs.core.windows.net"
+},
+"connectVia": {
+"referenceName": "AutoResolveIntegrationRuntime",
+"type": "IntegrationRuntimeReference"
+},
+"annotations": []
+}
+}
