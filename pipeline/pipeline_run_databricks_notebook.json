@@ -14,10 +14,10 @@
 }
 ],
 "typeProperties": {
-"notebookPath": "/Repos/{{DATABRICKS_USER}}/Azure-Data-Engineering-Project/data_transformations_databricks.ipynb",
+"notebookPath": "/Repos/pratikshagadge0709/Azure-Data-Engineering-Project/data_transformations_databricks.ipynb",
 "baseParameters": {
-"input_path": "abfss://raw@{{STORAGE_ACCOUNT_NAME}}.dfs.core.windows.net/raw/AdventureWorks_Products.csv",
-"output_path": "abfss://transform@{{STORAGE_ACCOUNT_NAME}}.dfs.core.windows.net/transform/Products/"
+"input_path": "abfss://raw@pg0709.dfs.core.windows.net/raw/AdventureWorks_Products.csv",
+"output_path": "abfss://transform@pg0709.dfs.core.windows.net/transform/products/"
 }
 },
 "linkedServiceName": {
