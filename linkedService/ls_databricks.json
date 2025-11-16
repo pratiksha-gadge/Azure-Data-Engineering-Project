@@ -1,5 +1,5 @@
 {
-"name": "LS_Databricks_workspace",
+"name": "ls_databricks",
 "properties": {
 "type": "Databricks",
 "typeProperties": {
