@@ -1,5 +1,5 @@
 {
-"name": "DS_Transformed_ADLS_Parquet",
+"name": "ds_transformed_adls_parquet",
 "properties": {
 "linkedServiceName": {
 "referenceName": "LS_ADLSGen2",
