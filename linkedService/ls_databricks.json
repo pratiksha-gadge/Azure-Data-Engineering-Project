@@ -1,12 +1,11 @@
 {
-"name": "ls_databricks",
-"properties": {
-"type": "Databricks",
-"typeProperties": {
-"domain": "https://adb-996527983683640.0.azuredatabricks.net",
-"existingClusterId": "",
-"accessToken": "{{DATABRICKS_TOKEN}}"
-},
-"annotations": []
-}
+	"name": "ls_databricks",
+	"properties": {
+		"typeProperties": {
+			"domain": "https://adb-996527983683640.0.azuredatabricks.net",
+			"existingClusterId": "1116-122657-ufs0rlij",
+			"accessToken": "{{DATABRICKS_TOKEN}}"
+		},
+		"type": "Databricks"
+	}
 }
