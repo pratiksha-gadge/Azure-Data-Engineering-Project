@@ -1,0 +1,36 @@
+{
+"name": "Pipeline_LoadRawFromGitHub",
+"properties": {
+"activities": [
+{
+"name": "CopyFromGitHubToADLS",
+"type": "Copy",
+"dependsOn": [],
+"policy": {},
+"typeProperties": {
+"source": {
+"type": "HttpSource",
+"httpRequestTimeout": "00:01:00"
+},
+"sink": {
+"type": "AzureDataLakeStoreSink",
+"copyBehavior": "PreserveHierarchy"
+}
+},
+"inputs": [
+{
+"referenceName": "DS_Raw_GitHub_CSV",
+"type": "DatasetReference"
+}
+],
+"outputs": [
+{
+"referenceName": "DS_Raw_ADLS_CSV",
+"type": "DatasetReference"
+}
+]
+}
+],
+"annotations": []
+}
+}
