@@ -1,0 +1,20 @@
+{
+"name": "DS_Raw_ADLS_CSV",
+"properties": {
+"linkedServiceName": {
+"referenceName": "LS_ADLSGen2",
+"type": "LinkedServiceReference"
+},
+"type": "AzureBlobFSFile",
+"typeProperties": {
+"relativePath": "raw/AdventureWorks_Products.csv",
+"fileName": "AdventureWorks_Products.csv"
+},
+"format": {
+"type": "TextFormat",
+"columnDelimiter": ",",
+"rowDelimiter": "\n",
+"encodingName": "utf-8"
+}
+}
+}
