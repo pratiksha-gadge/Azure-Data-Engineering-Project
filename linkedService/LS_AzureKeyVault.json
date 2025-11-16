@@ -6,5 +6,13 @@
 		"typeProperties": {
 			"baseUrl": "https://Databrickskeysecret.vault.azure.net/"
 		}
+	},
+	"accessToken": {
+		"type": "AzureKeyVaultSecret",
+		"store": {
+			"referenceName": "LS_AzureKeyVault",
+			"type": "LinkedServiceReference"
+		},
+		"secretName": "DatabricksSASToken"
 	}
 }
