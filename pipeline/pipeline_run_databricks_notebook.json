@@ -1,31 +1,31 @@
 {
-"name": "Pipeline_Run_Databricks_Transform",
-"properties": {
-"activities": [
-{
-"name": "Run_Databricks_Notebook",
-"type": "DatabricksNotebook",
-"dependsOn": [
-{
-"activity": "CopyFromGitHubToADLS",
-"dependencyConditions": [
-"Succeeded"
-]
-}
-],
-"typeProperties": {
-"notebookPath": "/Repos/pratikshagadge0709/Azure-Data-Engineering-Project/data_transformations_databricks.ipynb",
-"baseParameters": {
-"input_path": "abfss://raw@pg0709.dfs.core.windows.net/raw/AdventureWorks_Products.csv",
-"output_path": "abfss://transform@pg0709.dfs.core.windows.net/transform/products/"
-}
-},
-"linkedServiceName": {
-"referenceName": "LS_Databricks_workspace",
-"type": "LinkedServiceReference"
-}
-}
-],
-"annotations": []
-}
+	"name": "pipeline_run_databricks_notebook",
+	"properties": {
+		"activities": [
+			{
+				"name": "Run_Databricks_Notebook",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/pratikshagadge0709/Azure-Data-Engineering-Project/data_transformations_databricks.ipynb",
+					"baseParameters": {
+						"input_path": "abfss://raw@pg0709.dfs.core.windows.net/raw/AdventureWorks_Products.csv",
+						"output_path": "abfss://transform@pg0709.dfs.core.windows.net/transform/products/"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_databricks",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": []
+	}
 }
