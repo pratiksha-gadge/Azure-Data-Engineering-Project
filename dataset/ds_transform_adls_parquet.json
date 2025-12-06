@@ -1,16 +1,20 @@
 {
-"name": "DS_Transformed_ADLS_Parquet",
-"properties": {
-"linkedServiceName": {
-"referenceName": "LS_ADLSGen2",
-"type": "LinkedServiceReference"
-},
-"type": "AzureBlobFSFolder",
-"typeProperties": {
-"relativePath": "transform/products"
-},
-"format": {
-"type": "ParquetFormat"
-}
-}
+	"name": "ds_transform_adls_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLSGen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "products",
+				"fileSystem": "transform"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
 }

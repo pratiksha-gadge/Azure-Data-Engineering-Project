@@ -1,21 +1,24 @@
 {
-"name": "DS_Raw_ADLS_CSV",
-"properties": {
-"linkedServiceName": {
-"referenceName": "LS_ADLSGen2",
-"type": "LinkedServiceReference"
-},
-"type": "AzureBlobFSFile",
-"typeProperties": {
-"relativePath": "raw/AdventureWorks_Products.csv",
-"fileName": "AdventureWorks_Products.csv"
-},
-"format": {
-"type": "TextFormat",
-"columnDelimiter": ",",
-"rowDelimiter": "
-",
-"encodingName": "utf-8"
-}
-}
+	"name": "ds_raw_adls_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLSGen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "AdventureWorks_Products.csv",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"encodingName": "utf-8",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
 }
