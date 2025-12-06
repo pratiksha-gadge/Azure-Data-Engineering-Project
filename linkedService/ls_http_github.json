@@ -1,5 +1,5 @@
 {
-"name": "LS_GitHubRaw_HTTP",
+"name": "ls_http_github",
 "properties": {
 "type": "HttpServer",
 "typeProperties": {
