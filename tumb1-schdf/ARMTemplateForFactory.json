@@ -43,6 +43,7 @@
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
+							"retry": 2,
 							"retryIntervalInSeconds": 30
 						},
 						"userProperties": [],
