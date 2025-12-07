@@ -258,7 +258,8 @@
 				"type": "HttpServer",
 				"typeProperties": {
 					"url": "[parameters('ls_http_github_properties_typeProperties_url')]",
-					"enableServerCertificateValidation": true
+					"enableServerCertificateValidation": true,
+					"authenticationType": "Anonymous"
 				}
 			},
 			"dependsOn": []
