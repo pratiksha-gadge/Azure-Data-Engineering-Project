@@ -1,36 +1,41 @@
 {
-"name": "Pipeline_LoadRawFromGitHub",
-"properties": {
-"activities": [
-{
-"name": "CopyFromGitHubToADLS",
-"type": "Copy",
-"dependsOn": [],
-"policy": {},
-"typeProperties": {
-"source": {
-"type": "HttpSource",
-"httpRequestTimeout": "00:01:00"
-},
-"sink": {
-"type": "AzureDataLakeStoreSink",
-"copyBehavior": "PreserveHierarchy"
-}
-},
-"inputs": [
-{
-"referenceName": "DS_Raw_GitHub_CSV",
-"type": "DatasetReference"
-}
-],
-"outputs": [
-{
-"referenceName": "DS_Raw_ADLS_CSV",
-"type": "DatasetReference"
-}
-]
-}
-],
-"annotations": []
-}
+	"name": "Pipeline_LoadRawFromGitHub",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyFromGitHubToADLS",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"retry": 2,
+					"retryIntervalInSeconds": 30
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "HttpSource",
+						"httpRequestTimeout": "00:01:00"
+					},
+					"sink": {
+						"type": "AzureDataLakeStoreSink",
+						"copyBehavior": "PreserveHierarchy"
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "ds_raw_github_csv",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ds_raw_adls_csv",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
 }
