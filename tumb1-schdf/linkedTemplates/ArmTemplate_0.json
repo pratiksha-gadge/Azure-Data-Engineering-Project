@@ -102,14 +102,14 @@
 						"type": "DatabricksNotebook",
 						"dependsOn": [],
 						"policy": {
-							"retry": 0,
+							"retry": 1,
 							"retryIntervalInSeconds": 30,
 							"secureOutput": false,
 							"secureInput": false
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"notebookPath": "/Repos/pratikshagadge0709/Azure-Data-Engineering-Project/data_transformations_databricks.ipynb",
+							"notebookPath": "/Users/pratikshagadge0709@gmail.com/data_transformations_databricks",
 							"baseParameters": {
 								"input_path": "abfss://raw@pg0709.dfs.core.windows.net/raw/AdventureWorks_Products.csv",
 								"output_path": "abfss://transform@pg0709.dfs.core.windows.net/transform/products/"
